@@ -1,27 +1,23 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+page-home {
+    $primary-bgcolor: #f4f4f4;
+    $active-bgcolor: #3779F9;
+    @mixin footer-buttons() {
+        background: $primary-bgcolor;
+        color: black;
+    }
+    .wide-as-needed {
+        overflow: scroll;
+        white-space: nowrap;
+        width: 100%;
+    }
+    // .button-custom {
+    //     @include footer-buttons &:hover {
+    //         background: $active-bgcolor;
+    //         color: black;
+    //     }
+    // }
+    // .active {
+    //     @include footer-buttons background: $active-bgcolor;
+    //     color: white;
+    // }
 }
